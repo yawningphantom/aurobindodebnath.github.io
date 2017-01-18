@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style>
+			*{ margin: 0px; padding: 0px;
+			}
+			#body{
+				height: 3500px;
+				background-image: url(bg.jpg);
+				background-size:100%;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				min-width: 1000px;
+			}
+			#container {
+			    background-color: #fff;
+				background-image: url("remote.jpg");
+				background-size:cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			    width: 320px;
+				height: 320px;
+			    padding: 54px;
+			    border-radius: 300px;
+			    text-align: center;
+				margin-top: 100px;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				visibility: hidden;
+			}
+			#copyright{
+				height: 20px;
+				width: 800px;
+			    border: 1px solid #2b7077;
+			    background-color: #15153a;
+				float: left;
+				transform: rotate(90deg);
+				margin-left: -390px;
+				margin-top: -2800px;
+				color: gold;
+				text-align: center;
+				position: fixed;
+			}
+			#hangman{
+				height: 100px;
+				width: 150px;
+				padding-top: 50px;
+				margin-left: 12%;
+				background-image: url("hangman.jpg");
+				background-size: cover;
+				float: left;
+				border-radius: 75px;
+				text-align:center;
+				font-size: 30px;
+				visibility: hidden;
+			}
+			#calculator{
+				height: 50px;
+				width: 50px;
+				padding: 25px;
+				margin-left: 8%;
+				background-image: url(calculator.png);
+				background-size: cover;
+				float: left;
+				border-radius: 50px;
+				text-align:center;
+				font-size: 17px;
+				visibility: hidden;
+			}
+			#snake1{
+				height: 50px;
+				width: 50px;
+				padding: 25px;
+				background-image: url(snake.jpg);
+				background-size: cover;
+				background-color: red;
+				float: right;
+				margin-right: 8%;
+				border-radius: 50px;
+				text-align:center;
+				visibility: hidden;
+			}
+			#snake2{
+				height: 100px;
+				width: 100px;
+				padding: 25px;
+				background-image: url(snake2.png);
+				background-size: cover;
+				background-color: red;
+				float: right;
+				margin-right: 12%;
+				border-radius: 75px;
+				text-align:center;
+				visibility: hidden;
+			}
+			.note{
+				text-align: center;
+				background-color: #4b84bf;
+				font: normal normal 24px Balker;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<div id="copyright">&copy; Aurobindo Debnath</div>
+		<a href="Hangman/index.html"><div id="hangman"></div></a>
+		<a href="Calculator/Calculator.html"><div id="calculator"></div></a>
+		<a href="SnakeGame/v2.0/index.html"><div id="snake2"></div></a>
+		<a href="SnakeGame/v1.0/index.html"><div id="snake1"></div></a>
+		<div id="container"></div>
+		<div class="note">Scroll down to see the projects</div>
+		<div></div>
+		<script>
+			function scroll(){
+				var y=window.pageYOffset;
+					var x= y+100;
+					document.getElementById("container").style.marginTop=x+'px';
+					document.getElementById("container").style.transform="rotate("+x+"deg) scale("+x/5000+")";
+					document.getElementById("body").style.height=3500-x+'px';
+					document.getElementById("container").style.visibility="visible";
+				if(y>0&&y<750)
+				{
+					document.getElementById("hangman").style.visibility="visible";
+					document.getElementById("hangman").style.transform="rotate("+x+"deg) scale("+x/750+")";
+				}
+				if(y>750&&y<1500)
+				{
+					document.getElementById("calculator").style.visibility="visible";
+					document.getElementById("calculator").style.transform="rotate("+x+"deg) scale("+(x-750)/750+")";
+				}
+				if(y>1500&&y<2250)
+				{
+					document.getElementById("snake1").style.visibility="visible";
+					document.getElementById("snake1").style.transform="rotate("+x+"deg) scale("+(x-1500)/750+")";
+				}
+				if(y>2250&&y<3000)
+				{
+					document.getElementById("snake2").style.visibility="visible";
+					document.getElementById("snake2").style.transform="rotate("+x+"deg) scale("+(x-2250)/750+")";
+				}
+			}
+			window.addEventListener("scroll",scroll,false);
+		</script>
+	</body>
+</html>
