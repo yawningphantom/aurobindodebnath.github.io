@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#ques1, #ques2, #ques3, #ans{
+	position: absolute;
+	background-color: lime;
+	transition: 1s ease;
+	width: 100%;
+	padding: 100px 10px;
+}
+
+#ques1{
+	z-index: 3;
+}
+
+#ques2{
+	z-index: 2;
+}
+#ques3{
+	z-index: 1;
+}
