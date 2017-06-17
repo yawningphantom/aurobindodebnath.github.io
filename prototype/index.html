@@ -1,7 +1,18 @@
-<!DOCTYPE html>
 <html>
-<head></head>
-<body>
-<input type="file" accept="image/*;capture=camera">
-</body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form method="POST" action="https://gauravb12.github.io/">
+            <input type="file" id="upload" accept="image/*;capture=camera">
+            <input type="submit" value="Send" name="btn-submit">
+        </form>
+        <script>
+            $("document").ready(function(){
+                $("#upload").change(function() {
+                    $("form").submit();
+                });
+            });
+        </script>
+    </body>
 </html>
