@@ -1,0 +1,383 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+    #home_button {
+  width: 150px;
+  height: 150px;
+  background-image: url('http://i.stack.imgur.com/sfed8.png');
+  background-size: cover;
+  background-color: #eee;
+  }
+.nav-tabs li a {
+      color: #00FFFF;
+      opacity: 0;
+  }
+ 
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      margin-top: 50px;
+      margin-right:10%;
+
+      background:transparent;
+      border: 0;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: transparent;
+      float: center;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      float: center;
+  }
+  .navbar.navbar-default {
+  border: none;
+}
+.navbar.navbar-default .navbar-nav > li > a,
+.navbar.navbar-default .navbar-brand {
+  color: white;
+}
+  .navbar.navbar-default .navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 0;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+   
+    padding: 30px;
+    overflow: hidden;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 30px 12px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #d70d4e;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  content: "";
+  background: #0a99bb;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .3s ease;
+  -webkit-transform: skewX(140deg);
+ 
+  -moz-transform: skewX(140deg);
+ 
+  transform:skewX(140deg);
+
+ 
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #d70d4e;
+}
+@media screen and (max-width: 768px) {
+  
+  #cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+
+}
+#cssmenu {
+  
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+   
+    padding: 30px;
+    overflow: hidden;
+}
+#cssmenu > ul > li {
+  margin-bottom: 10px;
+  float: none;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 30px 12px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #d70d4e;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -20px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  content: "";
+  background: #0a99bb;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .3s ease;
+-webkit-transform: skewX(0deg);
+ 
+  -moz-transform: skewX(0deg);
+ 
+  transform:skewX(0deg);
+ 
+}
+  .navbar-collapse.in {
+    overflow: hidden;
+    max-height: none !important;
+    height: auto !important;
+ 
+}
+}
+
+@media screen and (max-width: 650px) {
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+
+}
+#cssmenu {
+  
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+   
+    padding: 30px;
+    overflow: hidden;
+}
+#cssmenu > ul > li {
+    margin-bottom: 10px;
+  float: none;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 30px 12px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #d70d4e;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -20px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  content: "";
+  background: #0a99bb;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .3s ease;
+-webkit-transform: skewX(0deg);
+ 
+  -moz-transform: skewX(0deg);
+ 
+  transform:skewX(0deg);
+ 
+}
+
+.navbar-collapse.in {
+    overflow: hidden;
+    max-height: none !important;
+    height: auto !important;
+}
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Donate</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style type="text/css">
+    	#bg2 
+{
+  background:red;
+}
+
+#bg1
+{
+	background-color: #ffe900;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+#mynav{
+position: inherit;
+}
+
+#donate{
+	border-radius: 0px;
+	background-color: #22a1a8;
+	border: none;
+}
+#donate:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#myarea{font-family: 'Raleway', sans-serif;
+
+background-image: linear-gradient(to bottom, #56d5dc, #22a1a8);
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+padding: 50px;
+text-align: justify;
+}
+
+@media (min-width: 770px) {
+    body {
+  background-image: url(drawing.png);;
+    }
+}
+.glyphicon{
+	font-size: 5px;
+	padding: 0px;
+}
+#mydrop{
+}
+#mydrop li{
+	clear: both;
+}
+#about, #dis, #get, #home{
+	cursor: pointer;
+}
+    </style>
+</head>
+
+<body id="bg1">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6"></div>
+<div class="col-sm-6">
+     <nav id="mynav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+           <div class="activeness" id='cssmenu'>
+            <ul>
+               <li><a href="index.html" id="home" data-target="#myCarousel" data-slide-to="0" >Home</a></li>
+               <li class="active"><a href="about.html" id="about" data-target="#myCarousel" data-slide-to="1" >About</a></li>
+               <li><a href="get.html" id="get" data-target="#myCarousel" data-slide-to="2" >Get In Touch</a></li>
+               <li><a href="dis.html" id="dis" data-target="#myCarousel" data-slide-to="3" >Disclaimer</a></li>
+            </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6"></div>
+<div class="col-sm-6" id="myarea">
+THis is about
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<br><br><br>
+
+</div></div></div>    
+   <!-- Page Content -->
+        <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    /* JavaScript Media Queries */
+if (matchMedia) {
+	const mq = window.matchMedia("(max-width: 550px)");
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+	if(mq.matches)
+	{
+		$('#first').css('background', '#FCDF15');
+	}
+	else
+	{
+		$('#first').attr("style","background-image:url('drawing.png')");
+		
+	}
+
+}
+
+
+// in JS
+// based on value of imageUrl, determine what class to remove and what class to add.
+
+   
+    $('.carousel').carousel({
+        interval: false,
+        pause:true //changes the speed
+    })
+    $(document).ready(function(){
+    $('.activeness li').click(function() {
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+$(document).ready(function(){
+	$('#about').click(function(){
+		$('#myarea').html('blabla');
+	});
+});
+
+    </script>
+
+</body>
+
+</html>
