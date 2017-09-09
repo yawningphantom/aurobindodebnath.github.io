@@ -11,65 +11,92 @@
     <title>Donate</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style type="text/css">
-    	#bg2 
-{
-  background:red;
-}
 
-#bg1
-{
-	background-color: #ffe900;
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-}
-#mynav{
-position: inherit;
-}
-
-#donate{
-	border-radius: 0px;
-	background-color: #22a1a8;
-	border: none;
-}
-#donate:hover{
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#myarea{
-padding: 50px;
-
-text-align: justify;font-family: 'Raleway', sans-serif;
-}
-
-@media (min-width: 770px) {
-    body {
-  background-image: url(drawing.png);;
+/*Background images*/
+    #bg1
+    {
+    background-color: #fbe00f;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     }
-}
-#mydrop{
-}
-#mydrop li{
-	clear: both;
-}
-#about, #dis, #get, #home{
-	cursor: pointer;
-}
-.form-control{
-height: 100px;
-width: 40%;
-margin: auto;
-}
+    @media (min-width: 770px) {
+        body {
+      background-image: url(drawing.png);;
+        }
+    }
+
+    #myarea{
+      padding: 50px;
+      color: white;
+      font-size: 12px;
+      text-align: justify;
+      font-family: 'Raleway', sans-serif;
+    }
+
+
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+/*Donate button*/
+    
+    #mydrop{
+    }
+    #mydrop li{
+    	clear: both;
+    }
+    #about, #dis, #get, #home{
+    	cursor: pointer;
+    }
+    .form-control:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  
+  .x{
+    display: none;
+  }
+
+
+  #me li a{
+    display: block;
+    color: black;
+    opacity: 1;
+  }
+  #disx, #aboutx, #homex, #getx{
+    opacity: 1;
+    -moz-transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+  }
+
+  #myform{
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    background: transparent;
+    border: 0px solid black;
+  }
+  
     </style>
 </head>
 
 <body id="bg1">
+
+<!--nav bar-->
 <div class="container-fluid">
 <div class="row">
-<div class="col-sm-6"></div>
-<div class="col-sm-6">
-     <nav id="mynav" class="navbar navbar-default navbar-fixed-top">
+<div class="col-sm-3"></div>
+<div class="col-sm-9">
+     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -82,10 +109,10 @@ margin: auto;
           <ul class="nav navbar-nav navbar-right">
            <div class="activeness" id='cssmenu'>
             <ul>
-               <li class="active"><a href="index.html" id="home" data-target="#myCarousel" data-slide-to="0" >Home</a></li>
-               <li><a href="about.html" id="about" data-target="#myCarousel" data-slide-to="1" >About</a></li>
-               <li><a href="get.html" id="get" data-target="#myCarousel" data-slide-to="2" >Get In Touch</a></li>
-               <li><a href="dis.html" id="dis" data-target="#myCarousel" data-slide-to="3" >Disclaimer</a></li>
+               <li class="active"><a id="home" data-target="#myCarousel" data-slide-to="0" >Home</a></li>
+               <li><a id="about" data-target="#myCarousel" data-slide-to="1" >About</a></li>
+               <li><a id="get" id="get" data-target="#myCarousel" data-slide-to="2" >Get In Touch</a></li>
+               <li><a id="dis" id="dis" data-target="#myCarousel" data-slide-to="3" >Disclaimer</a></li>
             </ul>
             </div>
           </ul>
@@ -96,26 +123,137 @@ margin: auto;
 </div>
 </div>
 
-
+<!-- nav bar ends-->
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-sm-6"></div>
-<div class="col-sm-6" id="myarea">
+<div class="col-sm-3"></div>
+<div class="col-sm-8" id="myarea" style="font-weight: bold; font-size: 14px;">
+</div>
+</div>
+</div>
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
+
+<div class="container">
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-8">
+<div class="row">
+<div class="x col-sm-12" id="homex">
 <br><br>
+<p>
+Donate a voice is a portal that allows you to donate marketing budget to ideas and videos that you really like.
+<br>
+We will use the budget to market the videos that you donate to online and spend it on qualified people to do the job.
+<br>
+This way we can ensure that the best ideas do not get lost.
+<br>
+The categories that we do support are politics, pop music, alternative music, rock music, poverty reduction, sustainable business and women invent for amazing women businesses.<br><br>
+</p>
+
 <div class="img-responsive">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-<input type="image" class="form-control" src="https://i.imgur.com/VhDxErL.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<input type="image" class="form-control" id="myform" src="donate.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
 </div>
+</div>
+</div>
 
-</div></div></div>    
+<div class="row">
+<div class="x col-sm-12" id="aboutx">
+<p>
+All successful, long operating businesses have one thing in common: a marketing budget. Many business owners underestimate the importance of marketing and view it as wasted money or an unneeded expense due to lack of resources. This is extremely far from the truth and a very short sighted way of thinking.
+</p>
+There are a variety of factors that go into what your marketing budget should be: your industry, your company size, your competition, growth stage, and location. All of these are main factors and one may carry more weight than others.
+<p>
+Minorities, women and new politicians aiming to change have difficulty to attract capital. Only 15 percent of venture capital-funded companies have a women on the executive team, up from 5 percent in 1999. Even worse, a mere 2.7 percent of venture capital-funded companies have a woman CEO. For people who are not like the ones that shall support them, it is hard to get funding. Because we all invest in people that are like us.
+</p>
+<p>
+The problem is that this way many good ideas die.
+</p><p>
+We recently sat down with a close friend who owned a business that was closing after being opened for over a decade. When we asked what his advertising budget was he said he never had one. Increasing rent on his location and declining sales were believed to be the primary factors he stated, however he did not know that not spending a dollar on marketing was really the cause.
+</p><p>
+Give cool ideas, and hard work, the recognition it deserves. Pick a suitable budget and stick with it. Tell people about it! Give them a coupon, give them some incentive to visit you! Have a sale and tell the world that your idea is great! Give things away! The more outlets your message is distributed on the better your chances are of getting a new customer, or increasing the frequency of a return visit from an existing customer.
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class="x col-sm-12" id="getx">
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="subject">Subject:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="subject" placeholder="Enter Subject">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="message">Message:</label>
+    <div class="col-sm-10"> 
+      <textarea class="form-control" rows="5" id="message"></textarea>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Send</button>
+    </div>
+  </div>
+</form>
+
+</div>
+</div>
+
+
+<div class="row">
+<div class="x col-sm-12" id="disx">
+
+<ul class="nav nav-tabs" id="me">
+  <li class="active"><a data-toggle="tab" href="#home">TERMS OF USE</a></li>
+  <li><a data-toggle="tab" href="#menu1">SAFE HARBOR PROVISION</a></li>
+  <li><a data-toggle="tab" href="#menu2">PRIVACY</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>TERMS OF USE</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>SAFE HARBOR PROVISION</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>PRIVACY</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
    <!-- Page Content -->
         <!-- /.container -->
 
@@ -136,7 +274,6 @@ if (matchMedia) {
 
 // media query change
 function WidthChange(mq) {
-
 	if(mq.matches)
 	{
 		$('#first').css('background', '#FCDF15');
@@ -146,7 +283,6 @@ function WidthChange(mq) {
 		$('#first').attr("style","background-image:url('drawing.png')");
 		
 	}
-
 }
 
 
@@ -163,6 +299,36 @@ function WidthChange(mq) {
         $(this).siblings('li').removeClass('active');
         $(this).addClass('active');
     });
+});
+
+
+// JavaScript code for animation
+var area= document.getElementById("myarea");
+var home= document.getElementById("home");
+var about= document.getElementById("about");
+var get= document.getElementById("get");
+var dis= document.getElementById("dis");
+var homecontent= document.getElementById("homex");
+var aboutcontent = document.getElementById("aboutx");
+var getcontent = document.getElementById("getx");
+var discontent= document.getElementById("disx");
+
+
+window.addEventListener("load",function(){
+  area.innerHTML= homecontent.innerHTML;
+});
+
+home.addEventListener("click", function(){
+  area.innerHTML= homecontent.innerHTML;
+});
+about.addEventListener("click", function(){
+  area.innerHTML= aboutcontent.innerHTML;
+});
+get.addEventListener("click", function(){
+  area.innerHTML = getcontent.innerHTML;
+});
+dis.addEventListener("click", function(){
+  area.innerHTML = discontent.innerHTML;
 });
 
     </script>
