@@ -1,4 +1,4 @@
-# aurobindodebnath.github.io
+
 This repository contains games made using Javascript Canvas.
 
 1. Hangman is a classic guessing game for two or more players. Player  tries to guess it by suggesting letters or numbers, within a certain number of guesses.
